@@ -20,7 +20,7 @@ export const Histogram = ({
   // cosntant values
   const width = 800;
   const height = 600;
-  const margin = { top: 50, right: 0, bottom: 180, left: 150 };
+  const margin = { top: 50, right: 20, bottom: 180, left: 80 };
 
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
