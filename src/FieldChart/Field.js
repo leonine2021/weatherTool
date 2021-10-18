@@ -13,7 +13,7 @@ import { dayToDate } from "../NumericalField";
 export const Field = ({ text, id, dataObj, weatherStation, turn }) => {
   const width = 980;
   const height = 340;
-  const margin = { top: 60, right: 0, bottom: 240, left: 35 };
+  const margin = { top: 60, right: 20, bottom: 240, left: 30 };
 
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
@@ -345,13 +345,13 @@ export const Field = ({ text, id, dataObj, weatherStation, turn }) => {
 
                     <text
                       className="wtm-text"
-                      x={innerWidth + margin.left - 50}
+                      x={innerWidth + margin.left - 150}
                       y={-95}
                       fontSize={11}
                     >{`Total Hours: ${numHours} hours`}</text>
                   </g>
                   <g
-                    transform={`translate(${innerWidth + margin.left - 15},${
+                    transform={`translate(${innerWidth + margin.left},${
                       height - margin.bottom + 45
                     })`}
                     id="axis-watermark-linear"
