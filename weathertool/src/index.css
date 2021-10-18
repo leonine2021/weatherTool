@@ -171,3 +171,11 @@ text#debuger {
 form-check.form-check-inline {
   float: inline-start;
 }
+
+input#colorpicker-line {
+  width: 50%;
+}
+
+input#colorpicker-bin {
+  width: 50%;
+}

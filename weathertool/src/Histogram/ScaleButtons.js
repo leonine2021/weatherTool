@@ -95,8 +95,9 @@ export const ScaleButtons = ({
       </div>
       <div className="row axis-range-input">
         <input
-          className="form-control"
+          className="form-control offset-3"
           type="color"
+          value={"#ADD8E6"}
           id="colorpicker-bin"
           onChange={(e) => {
             setNewBinColor(e.target.value);
@@ -108,9 +109,10 @@ export const ScaleButtons = ({
       </div>
       <div className="row axis-range-input">
         <input
-          className="form-control"
+          className="form-control offset-3"
           type="color"
           id="colorpicker-line"
+          value={"#FFA500"}
           onChange={(e) => {
             setNewLineColor(e.target.value);
           }}

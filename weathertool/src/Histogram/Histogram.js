@@ -20,7 +20,7 @@ export const Histogram = ({
   // cosntant values
   const width = 800;
   const height = 600;
-  const margin = { top: 50, right: 20, bottom: 180, left: 80 };
+  const margin = { top: 30, right: 180, bottom: 200, left: 100 };
 
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
@@ -182,12 +182,7 @@ export const Histogram = ({
             </div>
             <div className="col-9">
               <div className="container ms-3" id="toggle-lines">
-                <div class="form-check form-check-inline">
-                  <label className="form-check-label" htmlFor="toggle-db">
-                    <strong>Chart Metrics</strong>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline offset-9">
                   <input
                     className={"form-check-input"}
                     type={"checkbox"}
@@ -200,7 +195,7 @@ export const Histogram = ({
                   </label>
                 </div>
                 <Button
-                  id="mypopover"
+                  id="mypopover-histo"
                   type="button"
                   className="btn btn-secondary btn-sm"
                 >
@@ -208,10 +203,10 @@ export const Histogram = ({
                 </Button>
                 <Popover
                   isOpen={showPopup}
-                  target="mypopover"
+                  target="mypopover-histo"
                   toggle={togglePopover}
                   fade={false}
-                  placement={"bottom-start"}
+                  placement={"bottom-end"}
                 >
                   <PopoverHeader>Chart Settings</PopoverHeader>
                   <PopoverBody>
@@ -365,8 +360,8 @@ export const Histogram = ({
                     ></path>
                   </g>
                   <g
-                    transform={`translate(${margin.left},${
-                      height - margin.bottom + 75
+                    transform={`translate(${width - margin.right + 90},${
+                      height - margin.bottom - 75
                     })`}
                     id="axis-watermark-histogram"
                   >

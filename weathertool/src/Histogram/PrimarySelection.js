@@ -19,7 +19,7 @@ export const PrimarySelection = ({
   useEffect(() => {
     setNewMax(max);
     setNewMin(min);
-  }, [selectedValue]);
+  }, [selectedValue, min, max]);
 
   // pass the new min, max to the parent level
   useEffect(() => {
