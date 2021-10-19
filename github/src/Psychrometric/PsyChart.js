@@ -729,7 +729,7 @@ export const PsyChart = ({ text, id, dataObj, weatherStation, unit, turn }) => {
                       y={0}
                       fontSize={10}
                       transform={`rotate(-${(Math.atan(k) / Math.PI) * 180})
-                          translate(${pLabelY - 100}, ${pLabelX})`}
+                          translate(${pLabelY - 150}, ${pLabelX + 50})`}
                       opacity={toggleWb && !toggleEnt ? 100 : 0}
                       textAnchor={"middle"}
                     >
@@ -765,7 +765,7 @@ export const PsyChart = ({ text, id, dataObj, weatherStation, unit, turn }) => {
                       y={0}
                       fontSize={10}
                       transform={`rotate(-${(Math.atan(k) / Math.PI) * 180})
-                          translate(${pLabelY - 100}, ${pLabelX})`}
+                          translate(${pLabelY - 150}, ${pLabelX + 50})`}
                       opacity={toggleEnt ? 100 : 0}
                       opacity={toggleEnt ? 100 : 0}
                       textAnchor={"middle"}
