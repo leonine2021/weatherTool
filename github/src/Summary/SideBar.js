@@ -29,13 +29,13 @@ export const SideBar = ({ unit, getHtClDegrees }) => {
 
   return (
     <div className="row" id="side-bar">
-      <label htmlFor="heating-degree"></label>
+      <label htmlFor="heating-degree">Heating Degree</label>
       <NumericInput
         id="heating-degree"
         value={heatingDegree}
         onChange={setHeatingDegree}
       />
-      <label htmlFor="cooling-degree"></label>
+      <label htmlFor="cooling-degree">Cooling Degree</label>
       <NumericInput
         id="cooling-degree"
         value={coolingDegree}
